@@ -19,6 +19,13 @@ namespace DependencyServices.ViewModels
         }
         #endregion
 
+        #region NotifyPropertyChanged
+        protected void NotifyPropertyChanged(String propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+        #endregion
+
         public event PropertyChangedEventHandler PropertyChanged;
     }
 }
