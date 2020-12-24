@@ -20,6 +20,13 @@ namespace DependencyServices.ViewModels
         #endregion
 
         #region NotifyPropertyChanged
+        /// <summary> 
+        /// It implement the Invoke method from 
+        /// PropertyChanged in the subclasses.
+        /// </summary>
+        /// <param name="propertyName">
+        /// I usually use nameof(ThisProperty)
+        /// </param>
         protected void NotifyPropertyChanged(String propertyName)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));

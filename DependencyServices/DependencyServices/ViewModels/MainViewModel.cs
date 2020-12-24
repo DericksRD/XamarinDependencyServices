@@ -15,6 +15,7 @@ namespace DependencyServices.ViewModels
     {
         //Atributes and Commands:
 
+        #region PhoneOrientation and PreviousOrientation
         public String phoneOrientation;
         public String PhoneOrientation { 
             get
@@ -28,6 +29,7 @@ namespace DependencyServices.ViewModels
                 NotifyPropertyChanged(nameof(PhoneOrientation));
             }
         }
+        #endregion
 
         public ICommand OrientationCommand { get; }
 

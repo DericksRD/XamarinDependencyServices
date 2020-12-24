@@ -63,6 +63,7 @@
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Effects\IOSFocusEffect.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Renderers\MyEntryRenderer.cs" />
@@ -138,4 +139,5 @@
       <Name>DependencyServices</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
 </Project>
