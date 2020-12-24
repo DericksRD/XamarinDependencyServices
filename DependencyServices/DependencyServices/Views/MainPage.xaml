@@ -2,10 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DependencyServices.MainPage">
+    <!--xmlns:local="clr-namespace:DependencyServices.Control;assembly=MyEntry"--> 
 
     <StackLayout HorizontalOptions="CenterAndExpand">
         <Button Text="Get Orientation" Command="{Binding OrientationCommand}" />
-        <Label Text="{Binding PhoneOrientation}" />
+        <!--<Label Text="{Binding PhoneOrientation}" />-->
+        <Entry Text="{Binding PhoneOrientation}" />
     </StackLayout>
 
 </ContentPage>
